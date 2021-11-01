@@ -28,13 +28,13 @@ router.get('/', (req, res) => {
 
     const advisor = [ {
         'type': "POST",
-        'route': "http://localhost:5000/api/admin/advisor",
+        'route': "http://localhost:5000/api/advisor",
         'body': "name, photo_url",
         'desc': "add advisor"
     },
     {
         'type': "GET",
-        'route': "http://localhost:5000/api/admin/advisor",
+        'route': "http://localhost:5000/api/advisor",
         'desc': "get all advisor"
     } ]
 

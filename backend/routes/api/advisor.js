@@ -4,15 +4,15 @@ const advisor = require('../controller/advisor');
 const verify = require('../../middleware/verify')
 const validator = require('../../middleware/validator');
 
-//@route POST /api/admin/advisor
+//@route POST /api/advisor
 //@desc add/create advisor
 //@access private
-router.post('/advisor', [ verify, validator.validateAdvisor ], advisor.addAdvisor);
+router.post('/', [ verify, validator.validateAdvisor ], advisor.addAdvisor);
 
-//@route GET /api/admin/advisor
+//@route GET /api/advisor
 //@desc get all advisors
 //@access private
-router.get('/advisor', [ verify ], advisor.getAdvisor);
+router.get('/', [ verify ], advisor.getAdvisor);
 
 
 module.exports = router;

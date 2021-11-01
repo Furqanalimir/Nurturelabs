@@ -16,7 +16,7 @@ app.use(cors());
 
 //api routes
 app.use('/api/user', require('./routes/api/auth'));
-app.use('/api/admin', require('./routes/api/advisor'));
+app.use('/api/advisor', require('./routes/api/advisor'));
 app.use('/api/appiontment', require('./routes/api/appiontment'));
 
 app.use('/', require('./routes/api/get'));
